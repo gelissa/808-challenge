@@ -28,8 +28,12 @@ export class RowComponent implements OnInit {
     { id: 16, value: '' },
   ]; 
 
-@Input() mouseClick = new EventEmitter<MouseEvent>();
-ß
+@Input() mouseClick = new EventEmitter();
+
+mouseClicker() {
+  console.log(this.mouseClick);
+}
+
 constructor() { 
 
 }

@@ -1,3 +1,3 @@
-<p>
-    key: {{ btn }}
-</p>
+<button type="button" class="btn btn-dark" *ngFor="let elements of btn">
+    {{ btn.value | json }}
+</button>

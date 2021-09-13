@@ -1,39 +1,35 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ButtonComponent } from '../button/button.component'
+import { EventEmitter } from 'events';
 
 @Component({
   selector: 'app-row',
   templateUrl: './row.component.html',
-  styleUrls: ['./row.component.scss']
+  styleUrls: ['./row.component.css']
 })
 export class RowComponent implements OnInit {
 
   @Input() elements = [
-    { id: 1, value: 'q' },
-    { id: 2, value: 'w' },
-    { id: 3, value: 'e' },
-    { id: 4, value: 'r' },
-    { id: 5, value: 't' },
-    { id: 6, value: 'y' },
-    { id: 7, value: 'u' },
-    { id: 8, value: 'i' },
-    { id: 9, value: 'o' },
-    { id: 10, value: 'p' },
-    { id: 11, value: 'a' },
-    { id: 12, value: 's' },
-    { id: 13, value: 'd' },
-    { id: 14, value: 'f' },
-    { id: 15, value: 'g' },
-    { id: 16, value: 'h' },
+    { id: 1, value: '' },
+    { id: 2, value: '' },
+    { id: 3, value: '' },
+    { id: 4, value: '' },
+    { id: 5, value: '' },
+    { id: 6, value: '' },
+    { id: 7, value: '' },
+    { id: 8, value: '' },
+    { id: 9, value: '' },
+    { id: 10, value: '' },
+    { id: 11, value: '' },
+    { id: 12, value: '' },
+    { id: 13, value: '' },
+    { id: 14, value: '' },
+    { id: 15, value: '' },
+    { id: 16, value: '' },
   ]; 
 
-
- makeRow(): typeof ButtonComponent {
-  for (let i = 0; i > 16; i++) {
-    return ButtonComponent;
-  }
-}
-
+@Input() mouseClick = new EventEmitter<MouseEvent>();
+ß
 constructor() { 
 
 }

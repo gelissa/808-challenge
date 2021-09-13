@@ -1,0 +1,6 @@
+/* this css affects the actual buttons */
+.btn {
+    width: 20px;
+    height: 35px;
+    margin: 15px;
+}
